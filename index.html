@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   
+
+
+<script>
+
+document.write("<table border = '2px'>")
+let userData = [];
+
+let noOfUser = parseInt(prompt('Enter the No how many user you want to add'))
+
+
+
+
+for (let i = 0; i < noOfUser; i++){
+
+let userName = prompt("Enter User Name")
+let Qualification = prompt("Enter Education")
+let result = prompt("Enter Result")
+
+let userArr = [userName,Qualification,result]
+
+userData.push(userArr)
+
+}
+
+for(let a = 0; a < userData.length; a++){
+document.write("<tr>");
+
+
+for (let b = 0; b < userData[a].length; b++){
+
+document.write("<td>" +  userData[a][b] + "</td>")
+
+}
+document.write("</tr>")
+}
+
+document.write("</table>")
+</script>
+
+
+</body>
+</html>
